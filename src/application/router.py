@@ -58,6 +58,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                 currency="USD-T",
                 date=datetime.today(),
                 requisites="12345678900987654321",
+                type_requisites="Номер телефона",
             ),
             SellerApplication(
                 id_application=99095,
@@ -68,6 +69,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                 currency="USD-T",
                 date=datetime.today(),
                 requisites="13579086422468097531",
+                type_requisites="СБП",
             ),
         ],
         from_bank="Сбербанк",
@@ -89,6 +91,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                     currency="Рубль",
                     date=datetime.today(),
                     requisites="123456654321178900987",
+                    type_requisites="Т-Банк",
                 ),
                 SellerApplication(
                     id_application=99094,
@@ -99,6 +102,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                     currency="Рубль",
                     date=datetime.today(),
                     requisites="54546363727291910808",
+                    type_requisites="ВТБ",
                 ),
             ],
             from_bank="JSC Isbank Georgia",

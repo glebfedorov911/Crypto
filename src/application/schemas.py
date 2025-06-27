@@ -17,6 +17,7 @@ class Application(BaseModel):
 
 class SellerApplication(Application):
     requisites: str
+    type_requisites: str
     amount_received: float
     amount_full: float
 
