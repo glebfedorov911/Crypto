@@ -9,6 +9,7 @@ class Status(BaseModel):
     pay: List[str]
 
 class Application(BaseModel):
+    id_application: int
     bank: str
     sum: float
     date: datetime
@@ -18,5 +19,4 @@ class SellerApplication(Application):
     requisites: str
 
 class PayApplication(Application):
-    id_application: int
     seller: List[SellerApplication]
