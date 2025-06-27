@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: .
+    container_name: backend_crypto
+    ports:
+      - "8015:8015"
+    networks:
+      - network_crypto
+    volumes:
+      - .:/app
+
+
+networks:
+  network_crypto:
+    driver: bridge
