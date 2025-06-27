@@ -18,6 +18,7 @@ class Application(BaseModel):
 class SellerApplication(Application):
     requisites: str
     amount_received: float
+    amount_full: float
 
 class PayApplication(Application):
     seller: List[SellerApplication]
