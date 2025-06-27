@@ -50,6 +50,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
         currency="Рубль",
         seller=[
             SellerApplication(
+                id_application=99090,
                 bank="Liberty Bank",
                 sum=999.77,
                 currency="USD-T",
@@ -57,6 +58,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                 requisites="12345678900987654321",
             ),
             SellerApplication(
+                id_application=99095,
                 bank="JSC Isbank Georgia",
                 sum=412.12,
                 currency="USD-T",
@@ -74,6 +76,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
             currency="Доллар",
             seller=[
                 SellerApplication(
+                    id_application=99092,
                     bank="Т-Банк",
                     sum=6543,
                     currency="Рубль",
@@ -81,6 +84,7 @@ async def applications(filters: List[str] = Query(None)) -> List[PayApplication]
                     requisites="123456654321178900987",
                 ),
                 SellerApplication(
+                    id_application=99094,
                     bank="ВТБ",
                     sum=3457,
                     currency="Рубль",
